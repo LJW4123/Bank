@@ -9,6 +9,7 @@ public class study005 {
 	public static void main(String[] args) {
 		
 		int choice = 0;
+		int j=1;
 		BankManager branch1 = new BankManager("건국대지점" , 5);
 		while(true) {
 			System.out.println("1)계좌 개설 2) 입금 3) 출금 4)이체 5) 계좌 확인 6) 종료");
@@ -20,7 +21,7 @@ public class study005 {
 
 			switch (choice) {
 			case 1:
-				int j=1;
+				
 				branch1.createAccount();
 				System.out.println("계좌번호는 "+j);
 				j++;
