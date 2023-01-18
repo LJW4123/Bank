@@ -20,7 +20,7 @@ public class study005 {
 
 			switch (choice) {
 			case 1:
-				int j=0;
+				int j=1;
 				branch1.createAccount();
 				System.out.println("계좌번호는 "+j);
 				j++;
@@ -35,10 +35,10 @@ public class study005 {
 				branch1.transfer();
 				break;
 			case 5 :
-				int i =0;
+				
 				System.out.println("계좌번호 입력");
-				i = scan.nextInt();
-				System.out.println(branch1.bankAccount[i]);
+				int i = scan.nextInt();
+				System.out.println(branch1.bankAccount[i-1]);
 				break;
 			case 6:				
 				System.out.println("프로그램을 종료합니다.");
